@@ -1,0 +1,32 @@
+.subjectSearchList{
+  width: 60%;
+  height: 600px;
+  overflow: scroll;
+  white-space: nowrap;
+  padding: 10px;
+}
+table.listTable {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  margin : 20px 10px;
+}
+
+table.listTable td , th{
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+h3{
+  font-family: "맑은 고딕";
+}
+
+.click{
+  background-color: greenyellow;
+}
+.noClick{
+  background-color: white;
+}

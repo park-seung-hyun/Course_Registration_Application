@@ -1,0 +1,80 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/x.x.x/ng2-bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<div class="timeTableDiv">
+ <div class="day">
+   <!--빈공간-->
+   <table class="empty">
+     <tr>
+       <td> </td>
+     </tr>
+     <tr *ngFor="let slot of empty">
+       <td>{{slot}}</td>
+     </tr>
+   </table>
+ </div>
+  <div class="day">
+    <!--월요일-->
+    <table class="timeTable">
+      <tr>
+        <th>월</th>
+      </tr>
+      <tr *ngFor="let slot of Monday_R"
+      [ngClass]="selectColor(slot)">
+        <td *ngIf="slot.itemName!==''">{{slot.itemName}}</td>
+        <td *ngIf="slot.itemName===''"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="day">
+    <!--화요일-->
+    <table class="timeTable">
+    <tr>
+      <th>화</th>
+    </tr>
+      <tr *ngFor="let slot of Tuesday_R"
+          [ngClass]="selectColor(slot)">
+        <td *ngIf="slot.itemName!==''">{{slot.itemName}}</td>
+        <td *ngIf="slot.itemName===''"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="day">
+    <!--수요일-->
+    <table class="timeTable">
+    <tr>
+      <th>수</th>
+    </tr>
+      <tr *ngFor="let slot of Wednesday_R"
+          [ngClass]="selectColor(slot)">
+        <td *ngIf="slot.itemName!==''">{{slot.itemName}}</td>
+        <td *ngIf="slot.itemName===''"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="day">
+    <!--목요일-->
+    <table class="timeTable">
+    <tr>
+      <th>목</th>
+    </tr>
+      <tr *ngFor="let slot of Thursday_R"
+          [ngClass]="selectColor(slot)">
+        <td *ngIf="slot.itemName!==''">{{slot.itemName}}</td>
+        <td *ngIf="slot.itemName===''"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="day">
+    <!--금요일-->
+    <table class="timeTable">
+    <tr>
+      <th>금</th>
+    </tr>
+      <tr *ngFor="let slot of Friday_R"
+          [ngClass]="selectColor(slot)">
+        <td *ngIf="slot.itemName!==''">{{slot.itemName}}</td>
+        <td *ngIf="slot.itemName===''"></td>
+      </tr>
+    </table>
+  </div>
+</div>

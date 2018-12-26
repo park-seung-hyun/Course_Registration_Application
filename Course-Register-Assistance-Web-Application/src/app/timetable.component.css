@@ -1,0 +1,71 @@
+
+div.timeTableDiv{
+  width: 35%;
+  height: 600px;
+  margin: 20px;;
+  float: left;
+}
+table.timeTable{
+  border-collapse: collapse;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+table.timeTable tr {
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+table.timeTable td,th {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+table.empty{
+  border-collapse: collapse;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+table.empty tr{
+  vertical-align: top;
+}
+table.empty td,th {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  vertical-align: top;
+}
+.day{
+  float: left;
+}
+.color1{
+  background-color: aquamarine;
+}
+.color2{
+  background-color: #ffd075;
+}
+.color3{
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+.color4{
+  background-color: cornflowerblue;
+}
+.color5{
+  background-color: greenyellow;
+}
+.color6{
+  background-color: #a5e6b6;
+}
+.color7{
+  background-color: #dcc7ce;
+}
+.color8{
+  background-color: hotpink;
+}
+.colorNo{
+  background-color: white;
+}
